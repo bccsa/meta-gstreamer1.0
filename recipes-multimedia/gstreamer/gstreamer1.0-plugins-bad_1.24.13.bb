@@ -8,7 +8,6 @@ BUGTRACKER = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad/-/issues"
 SRC_URI = "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-${PV}.tar.xz \
            file://0001-fix-maybe-uninitialized-warnings-when-compiling-with.patch \
            file://0002-avoid-including-sys-poll.h-directly.patch \
-           file://0004-opencv-resolve-missing-opencv-data-dir-in-yocto-buil.patch \
            "
 SRC_URI[sha256sum] = "3cbe7d7cec5db958781f7ab66caa5afd67b133c223fde71f0403277731f0cc4d"
 
@@ -124,7 +123,6 @@ EXTRA_OEMESON += " \
     -Dgs=disabled \
     -Dgsm=disabled \
     -Diqa=disabled \
-    -Dkate=disabled \
     -Dladspa=disabled \
     -Dldac=disabled \
     -Dlv2=disabled \

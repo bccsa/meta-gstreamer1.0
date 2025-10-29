@@ -17,10 +17,6 @@ S = "${WORKDIR}/gstreamer-${PV}"
 
 SRC_URI = "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-${PV}.tar.xz \
            file://run-ptest \
-           file://0001-tests-respect-the-idententaion-used-in-meson.patch \
-           file://0002-tests-add-support-for-install-the-tests.patch \
-           file://0003-tests-use-a-dictionaries-for-environment.patch;striplevel=3 \
-           file://0004-tests-add-helper-script-to-run-the-installed_tests.patch;striplevel=3 \
            "
 SRC_URI[sha256sum] = "ed4678e1d0708db01a469ae5dd31c10cac73c0fb3f7c2c471b0d3cab0affc7d1"
 
@@ -33,7 +29,7 @@ PACKAGECONFIG[debug] = "-Dgst_debug=true,-Dgst_debug=false"
 PACKAGECONFIG[tracer-hooks] = "-Dtracer_hooks=true,-Dtracer_hooks=false"
 PACKAGECONFIG[coretracers] = "-Dcoretracers=enabled,-Dcoretracers=disabled"
 PACKAGECONFIG[check] = "-Dcheck=enabled,-Dcheck=disabled"
-PACKAGECONFIG[tests] = "-Dtests=enabled -Dinstalled_tests=true,-Dtests=disabled -Dinstalled_tests=false"
+PACKAGECONFIG[tests] = "-Dtests=enabled,-Dtests=disabled"
 PACKAGECONFIG[unwind] = "-Dlibunwind=enabled,-Dlibunwind=disabled,libunwind"
 PACKAGECONFIG[dw] = "-Dlibdw=enabled,-Dlibdw=disabled,elfutils"
 PACKAGECONFIG[bash-completion] = "-Dbash-completion=enabled,-Dbash-completion=disabled,bash-completion"
