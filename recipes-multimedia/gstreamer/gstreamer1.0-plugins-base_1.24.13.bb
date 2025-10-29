@@ -11,7 +11,7 @@ SRC_URI = "https://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-ba
            file://0003-viv-fb-Make-sure-config.h-is-included.patch \
            file://0002-ssaparse-enhance-SSA-text-lines-parsing.patch \
            "
-SRC_URI[sha256sum] = "edd4338b45c26a9af28c0d35aab964a024c3884ba6f520d8428df04212c8c93a"
+SRC_URI[sha256sum] = "31a4a34e02df0471274fd0e8016495475b670320d20a3349faf0634340166c42"
 
 S = "${WORKDIR}/gst-plugins-base-${PV}"
 
